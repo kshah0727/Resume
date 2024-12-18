@@ -1,0 +1,218 @@
+#grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    position:relative;
+    width: 100%;
+}
+
+#name{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+a {    
+    text-decoration: none;
+    font-size: x-large;
+    color: black;;
+}
+.menuClass{
+    padding-top: 28px;
+    display:inline-flex;
+    padding-left: 75px;    
+}
+#visitingCard{
+    position: relative;  /* Allows absolute positioning of the small image */
+    display: inline-block; 
+    width: 100%;
+}
+#userCardImg{
+    position: absolute; /* Position relative to the container */
+    top: 365px;  /* Adjust this to position the small image from the top */
+    left: 26.5%; /* Adjust this to position the small image from the left */
+    width: 450px; /* You can adjust the size of the small image */
+    height: 385px; /* Keeps the aspect ratio of the small image */
+}
+#idCardinfo{
+    position: absolute; /* Position relative to the container */
+    top: 365px;  /* Adjust this to position the small image from the top */
+    left: 50%; /* Adjust this to position the small image from the left */
+    width: 500px; /* You can adjust the size of the small image */
+    height: 385px; /* Keeps the aspect ratio of the small image */
+    background-color: lightgray;    
+}
+#backgroundCardImg{
+    width: 100%;  /* Makes the large image take up the full width of the container */
+    height: auto;
+}
+#name{
+    font-size: 30px;
+    font-style: sans-serif;
+}
+.idCard {
+    padding-left: 40px;
+}
+#title{
+    font-size: 25px;
+}
+.info {
+    font-weight: bold;
+}
+.headerSections{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    border: 1px solid #ccc; width: 100%; margin: 20px 0;
+}
+.experience{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    background-color: #f4f4f4;
+}
+.experience-Container{
+    display: flex;
+    width: 90%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.eduction-Container{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16vh;    
+    background-color: #f4f4f4;
+}
+.eduction2{
+    display: flex;
+    width: 90%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.certification-Container{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9vh;    
+    background-color: #f4f4f4;
+}
+.innerCertification{
+    display: flex;
+    width: 60%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.certificationImg{
+    height: 4vh;    
+}
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-right: 2px solid #ddd;
+    text-align: center;
+    line-height: 1px;
+  }   
+
+.right {
+    flex: 2;
+    padding: 20px;
+  }
+
+  .container {
+    text-align: center;
+  }
+  
+  .container h1 {
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #333;
+  }
+  
+  .certification-boxes {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .cert-box {
+    width: 250px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px;
+    position: relative;
+  }
+  
+  .cert-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cert-box h2 {
+    font-size: 24px;
+    margin-top: 15px;
+    color: #333;
+  }
+  
+  .cert-box p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling for the certification images */
+  .cert-img {
+    width: 100px; /* Adjust the width as per your image size */
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .certification-boxes {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+    .cert-box {
+      width: 80%;
+    }
+  }

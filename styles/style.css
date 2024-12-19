@@ -207,12 +207,32 @@ a {
   }
   
   @media (max-width: 768px) {
-    .certification-boxes {
-      flex-direction: column;
-      gap: 20px;
-      align-items: center;
+    #grid-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    #name {
+        font-size: large;
+    }
+    .menuClass {
+        padding-left: 10px;
+        display: block;
+        text-align: center;
+    }
+    #userCardImg, #idCardinfo {
+        position: static;
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .experience-Container, .eduction2, .innerCertification {
+        width: 100%;
+        flex-direction: column;
     }
     .cert-box {
-      width: 80%;
+        width: 90%;
+    }
+    .certification-boxes {
+        flex-direction: column;
     }
   }

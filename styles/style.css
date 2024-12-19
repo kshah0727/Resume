@@ -29,8 +29,8 @@ a {
 #userCardImg{
     position: absolute; /* Position relative to the container */
     top: 365px;  /* Adjust this to position the small image from the top */
-    left: 26.5%; /* Adjust this to position the small image from the left */
-    width: 450px; /* You can adjust the size of the small image */
+    left: 34.5%; /* Adjust this to position the small image from the left */
+    width: 300px; /* You can adjust the size of the small image */
     height: 385px; /* Keeps the aspect ratio of the small image */
 }
 #idCardinfo{
